@@ -8,6 +8,7 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Button action method
     public void btnClicked(View view) {
 
         // Username TextField
