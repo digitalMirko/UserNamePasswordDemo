@@ -4,13 +4,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
     public void btnClicked(View view) {
+        
+        EditText usernameTextField = (EditText) findViewById(R.id.usernameTextField);
 
+        EditText passwordTextField = (EditText) findViewById(R.id.passwordTextField);
 
-        Log.i("Info","Btn clicked Testing123...");
+        Log.i("Username",usernameTextField.getText().toString());
+        Log.i("Password",passwordTextField.getText().toString());
     }
 
     @Override
