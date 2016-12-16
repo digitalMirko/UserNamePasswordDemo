@@ -9,11 +9,14 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
     public void btnClicked(View view) {
-        
+
+        // Username TextField
         EditText usernameTextField = (EditText) findViewById(R.id.usernameTextField);
 
+        // Password TextField
         EditText passwordTextField = (EditText) findViewById(R.id.passwordTextField);
 
+        // Username and Password field printed out to logcat when button clicked
         Log.i("Username",usernameTextField.getText().toString());
         Log.i("Password",passwordTextField.getText().toString());
     }
